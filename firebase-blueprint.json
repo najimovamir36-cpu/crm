@@ -1,0 +1,149 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "System user account with role-based permissions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique identifier" },
+        "fullName": { "type": "string", "description": "Full name of the user", "maxLength": 100 },
+        "username": { "type": "string", "description": "Username for login", "maxLength": 50 },
+        "role": { "type": "string", "enum": ["SUPER_ADMIN", "ADMIN", "OPERATOR", "TEACHER"], "description": "User access role" },
+        "phone": { "type": "string", "description": "Phone number", "maxLength": 25 },
+        "status": { "type": "string", "enum": ["ACTIVE", "INACTIVE"], "description": "Account status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "fullName", "username", "role", "status"]
+    },
+    "Teacher": {
+      "title": "Teacher",
+      "description": "Instructor information and assigned specialties",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique instructor ID" },
+        "fullName": { "type": "string", "description": "Teacher full name", "maxLength": 100 },
+        "phone": { "type": "string", "description": "Teacher phone number", "maxLength": 25 },
+        "specialty": { "type": "string", "description": "Teaching specialty or subject", "maxLength": 100 },
+        "salaryRate": { "type": "number", "description": "Salary rate or percentage" },
+        "status": { "type": "string", "enum": ["ACTIVE", "INACTIVE"], "description": "Employment status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "fullName", "phone", "specialty", "status"]
+    },
+    "Course": {
+      "title": "Course",
+      "description": "Educational course or subject offering",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Course identifier" },
+        "name": { "type": "string", "description": "Course title", "maxLength": 100 },
+        "description": { "type": "string", "description": "Course overview", "maxLength": 500 },
+        "durationMonths": { "type": "number", "description": "Duration in months" },
+        "monthlyFee": { "type": "number", "description": "Monthly tuition cost in UZS" },
+        "status": { "type": "string", "enum": ["ACTIVE", "INACTIVE"], "description": "Course status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "name", "durationMonths", "monthlyFee", "status"]
+    },
+    "Group": {
+      "title": "Group",
+      "description": "Class group assigned to teacher and course",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Group identifier" },
+        "name": { "type": "string", "description": "Group name", "maxLength": 100 },
+        "courseId": { "type": "string", "description": "Linked course ID" },
+        "teacherId": { "type": "string", "description": "Assigned teacher ID" },
+        "startDate": { "type": "string", "description": "Start date YYYY-MM-DD" },
+        "startTime": { "type": "string", "description": "Start time HH:mm" },
+        "endTime": { "type": "string", "description": "End time HH:mm" },
+        "room": { "type": "string", "description": "Room name or number", "maxLength": 50 },
+        "capacity": { "type": "number", "description": "Maximum student capacity" },
+        "status": { "type": "string", "enum": ["ACTIVE", "COMPLETED", "UPCOMING", "ARCHIVED"], "description": "Group lifecycle status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "name", "courseId", "teacherId", "status"]
+    },
+    "Student": {
+      "title": "Student",
+      "description": "Enrolled student record and balance status",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "System UUID" },
+        "studentId": { "type": "string", "description": "Human readable student ID like ST-2026-0001", "maxLength": 30 },
+        "fullName": { "type": "string", "description": "Student full name", "maxLength": 100 },
+        "phone": { "type": "string", "description": "Student phone number", "maxLength": 25 },
+        "parentPhone": { "type": "string", "description": "Parent phone number", "maxLength": 25 },
+        "birthDate": { "type": "string", "description": "Birth date" },
+        "address": { "type": "string", "description": "Residential address", "maxLength": 200 },
+        "status": { "type": "string", "enum": ["ACTIVE", "FROZEN", "LEFT"], "description": "Enrollment status" },
+        "balance": { "type": "number", "description": "Current balance in UZS (negative means debt)" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "studentId", "fullName", "phone", "status", "balance"]
+    },
+    "Attendance": {
+      "title": "Attendance",
+      "description": "Daily lesson attendance record for a group",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Attendance document ID" },
+        "groupId": { "type": "string", "description": "Group ID" },
+        "lessonDate": { "type": "string", "description": "Date of lesson YYYY-MM-DD" },
+        "takenBy": { "type": "string", "description": "Teacher or operator user ID who marked attendance" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "groupId", "lessonDate", "takenBy"]
+    },
+    "Payment": {
+      "title": "Payment",
+      "description": "Financial payment transaction recorded for student",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Payment ID" },
+        "studentId": { "type": "string", "description": "Target student ID" },
+        "amount": { "type": "number", "description": "Payment amount in UZS" },
+        "paymentMethod": { "type": "string", "enum": ["CASH", "CARD", "BANK_TRANSFER", "CLICK", "PAYME"], "description": "Payment method" },
+        "paymentDate": { "type": "string", "description": "Payment date YYYY-MM-DD" },
+        "paidForMonth": { "type": "string", "description": "Target month YYYY-MM" },
+        "receiptNumber": { "type": "string", "description": "Receipt number", "maxLength": 50 },
+        "note": { "type": "string", "description": "Optional notes", "maxLength": 250 },
+        "receivedBy": { "type": "string", "description": "Staff ID who registered payment" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["id", "studentId", "amount", "paymentMethod", "paymentDate", "receivedBy"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Collection of system administrative and instructor user profiles"
+    },
+    "/teachers/{teacherId}": {
+      "schema": "Teacher",
+      "description": "Collection of instructor profiles"
+    },
+    "/courses/{courseId}": {
+      "schema": "Course",
+      "description": "Collection of educational courses"
+    },
+    "/groups/{groupId}": {
+      "schema": "Group",
+      "description": "Collection of learning groups"
+    },
+    "/students/{studentId}": {
+      "schema": "Student",
+      "description": "Collection of enrolled students"
+    },
+    "/attendance/{attendanceId}": {
+      "schema": "Attendance",
+      "description": "Collection of attendance sheets per group and date"
+    },
+    "/payments/{paymentId}": {
+      "schema": "Payment",
+      "description": "Collection of financial payments and receipts"
+    }
+  }
+}

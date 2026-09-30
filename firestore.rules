@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Admins and staff have elevated privileges for CRM management
+    function isAdmin() {
+      return isVerifiedUser() && (
+        request.auth.token.email in ['najimovamir36@gmail.com', 'amirtemurnajimov@gmail.com'] ||
+        (request.auth.token.email is string && request.auth.token.email.size() > 0)
+      );
+    }
+
+    function isTeacher() {
+      return isVerifiedUser();
+    }
+
+    // Users collection
+    match /users/{userId} {
+      allow read: if isVerifiedUser();
+      allow write: if isAdmin() && isValidId(userId);
+    }
+
+    // Teachers collection
+    match /teachers/{teacherId} {
+      allow read: if isVerifiedUser();
+      allow write: if isAdmin() && isValidId(teacherId);
+    }
+
+    // Courses collection
+    match /courses/{courseId} {
+      allow read: if isVerifiedUser();
+      allow write: if isAdmin() && isValidId(courseId);
+    }
+
+    // Groups collection
+    match /groups/{groupId} {
+      allow read: if isVerifiedUser();
+      allow write: if isAdmin() && isValidId(groupId);
+    }
+
+    // Students collection
+    match /students/{studentId} {
+      allow read: if isVerifiedUser();
+      allow write: if isAdmin() && isValidId(studentId);
+    }
+
+    // Attendance collection
+    match /attendance/{attendanceId} {
+      allow read: if isVerifiedUser();
+      allow write: if (isAdmin() || isTeacher()) && isValidId(attendanceId);
+    }
+
+    // Payments collection
+    match /payments/{paymentId} {
+      allow read: if isVerifiedUser() && isAdmin();
+      allow write: if isAdmin() && isValidId(paymentId);
+    }
+
+    // Connection testing
+    match /test/connection {
+      allow read: if true;
+    }
+  }
+}

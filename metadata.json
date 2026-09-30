@@ -1,0 +1,6 @@
+{
+  "name": "EduCenter CRM - O'quv Markazi Boshqaruv Tizimi",
+  "description": "O'quv markazi uchun professional, keng qamrovli va xavfsiz CRM boshqaruv tizimi (o'quvchilar, guruhlar, to'lovlar, davomat, dars jadvali, Telegram xabarnoma va kelajakdagi ota-ona ilovasi API).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

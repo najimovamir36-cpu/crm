@@ -1,0 +1,1235 @@
+{
+  "users": [
+    {
+      "id": "usr_super_1",
+      "fullName": "Amir Temur",
+      "username": "superadmin",
+      "passwordHash": "$2b$10$ru2/sIhE4Tg4GRlb8rqjyueF30cy1HKjsW1TVav2fagoo9uplTgaW",
+      "role": "SUPER_ADMIN",
+      "phone": "+998 90 999 00 01",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-26T13:00:46.804Z",
+      "updatedAt": "2026-09-26T14:22:42.440Z",
+      "email": "amirtemurnajimov@gmail.com"
+    },
+    {
+      "id": "usr_admin_1",
+      "fullName": "Shahzod Karimov",
+      "username": "admin",
+      "passwordHash": "$2b$10$BRW6RlIgKQam3.tt8ix.EOd/n62Mi2B1Ld2pInLULIC02ZUk3Ty1C",
+      "role": "ADMIN",
+      "phone": "+998 90 888 11 22",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-26T13:00:46.804Z",
+      "updatedAt": "2026-09-26T13:00:46.804Z"
+    },
+    {
+      "id": "usr_oper_1",
+      "fullName": "Zarnigor Ahmedova",
+      "username": "operator",
+      "passwordHash": "$2b$10$yDXPsmTavkTJJARYzeB.MupfWuJC9Ll0DI4Z7PI8VZXRF0Oe6hIRS",
+      "role": "OPERATOR",
+      "phone": "+998 93 777 33 44",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-26T13:00:46.804Z",
+      "updatedAt": "2026-09-26T13:00:46.804Z"
+    },
+    {
+      "id": "usr_teach_1",
+      "fullName": "Sardor Raximov",
+      "username": "teacher_sardor",
+      "passwordHash": "$2b$10$nOc3byjbCDFF6qCuh.vde.Vn5j3RD679inxoW2E6YWfI7/d6QEHu6",
+      "role": "TEACHER",
+      "phone": "+998 90 123 45 67",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-28T11:32:17.130Z",
+      "updatedAt": "2026-09-28T11:32:17.131Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "tch_1790757268835_r7df",
+      "fullName": "Test Oqituvchi",
+      "phone": "+998 90 999 88 77",
+      "specialty": "Matematika",
+      "bio": "",
+      "salaryRate": 50,
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:34:28.835Z",
+      "deletedAt": "2026-09-30T08:34:28.902Z"
+    },
+    {
+      "id": "tch_1790757320632_82y8",
+      "fullName": "Test Oqituvchi",
+      "phone": "+998 90 999 88 77",
+      "specialty": "Matematika",
+      "bio": "",
+      "salaryRate": 50,
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:35:20.632Z",
+      "deletedAt": "2026-09-30T08:35:20.672Z"
+    },
+    {
+      "id": "tch_1790757345160_rurh",
+      "fullName": "Test Oqituvchi",
+      "phone": "+998 90 999 88 77",
+      "specialty": "Matematika",
+      "bio": "",
+      "salaryRate": 50,
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:35:45.160Z",
+      "deletedAt": "2026-09-30T08:35:45.229Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs_1790757268830_4s93",
+      "name": "Audit Test Course",
+      "description": "",
+      "durationMonths": 6,
+      "monthlyFee": 500000,
+      "startDate": "2026-10",
+      "endDate": "2027-04",
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:34:28.830Z",
+      "deletedAt": "2026-09-30T08:34:28.899Z"
+    },
+    {
+      "id": "crs_1790757320628_o41z",
+      "name": "Audit Test Course",
+      "description": "",
+      "durationMonths": 6,
+      "monthlyFee": 500000,
+      "startDate": "2026-10",
+      "endDate": "2027-04",
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:35:20.628Z",
+      "deletedAt": "2026-09-30T08:35:20.669Z"
+    },
+    {
+      "id": "crs_1790757345153_z5k3",
+      "name": "Audit Test Course",
+      "description": "",
+      "durationMonths": 6,
+      "monthlyFee": 500000,
+      "startDate": "2026-10",
+      "endDate": "2027-04",
+      "status": "INACTIVE",
+      "createdAt": "2026-09-30T08:35:45.153Z",
+      "deletedAt": "2026-09-30T08:35:45.226Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "grp_1790757268839_cn6x",
+      "name": "Test-Group-101",
+      "courseId": "crs_1790757268830_4s93",
+      "teacherId": "tch_1790757268835_r7df",
+      "startDate": "2026-10-01",
+      "endDate": "2027-04-01",
+      "days": [
+        "Dushanba",
+        "Chorshanba",
+        "Juma"
+      ],
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "maxStudents": 15,
+      "monthlyFee": 500000,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-30T08:34:28.839Z",
+      "deletedAt": "2026-09-30T08:34:28.864Z"
+    },
+    {
+      "id": "grp_1790757268845_lqeq",
+      "name": "Test-Group-NoTeacher",
+      "courseId": "crs_1790757268830_4s93",
+      "teacherId": "",
+      "startDate": "2026-10-01",
+      "endDate": "",
+      "days": [
+        "Seshanba",
+        "Payshanba",
+        "Shanba"
+      ],
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "maxStudents": 16,
+      "monthlyFee": 500000,
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T08:34:28.845Z"
+    },
+    {
+      "id": "grp_1790757320637_npdx",
+      "name": "Test-Group-101",
+      "courseId": "crs_1790757320628_o41z",
+      "teacherId": "tch_1790757320632_82y8",
+      "startDate": "2026-10-01",
+      "endDate": "2027-04-01",
+      "days": [
+        "Dushanba",
+        "Chorshanba",
+        "Juma"
+      ],
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "maxStudents": 15,
+      "monthlyFee": 500000,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-30T08:35:20.637Z",
+      "deletedAt": "2026-09-30T08:35:20.661Z"
+    },
+    {
+      "id": "grp_1790757320641_mj5c",
+      "name": "Test-Group-NoTeacher",
+      "courseId": "crs_1790757320628_o41z",
+      "teacherId": "",
+      "startDate": "2026-10-01",
+      "endDate": "",
+      "days": [
+        "Seshanba",
+        "Payshanba",
+        "Shanba"
+      ],
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "maxStudents": 16,
+      "monthlyFee": 500000,
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T08:35:20.641Z"
+    },
+    {
+      "id": "grp_1790757345168_cxr5",
+      "name": "Test-Group-101",
+      "courseId": "crs_1790757345153_z5k3",
+      "teacherId": "tch_1790757345160_rurh",
+      "startDate": "2026-10-01",
+      "endDate": "2027-04-01",
+      "days": [
+        "Dushanba",
+        "Chorshanba",
+        "Juma"
+      ],
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "maxStudents": 15,
+      "monthlyFee": 500000,
+      "status": "COMPLETED",
+      "createdAt": "2026-09-30T08:35:45.168Z",
+      "deletedAt": "2026-09-30T08:35:45.218Z"
+    },
+    {
+      "id": "grp_1790757345175_h8hg",
+      "name": "Test-Group-NoTeacher",
+      "courseId": "crs_1790757345153_z5k3",
+      "teacherId": "",
+      "startDate": "2026-10-01",
+      "endDate": "",
+      "days": [
+        "Seshanba",
+        "Payshanba",
+        "Shanba"
+      ],
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "maxStudents": 16,
+      "monthlyFee": 500000,
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T08:35:45.174Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std_1790657500618_f7u6",
+      "studentId": "89196",
+      "firstName": "RT",
+      "lastName": "FH",
+      "phone": "+998507562307",
+      "gender": "ERKAK",
+      "lessonTime": "Dushanba, Chorshanba, Juma (14:00 - 15:30)",
+      "notes": "",
+      "avatarUrl": "",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-29T04:51:40.618Z",
+      "updatedAt": "2026-09-30T08:35:45.222Z",
+      "courseId": "",
+      "groupId": "",
+      "teacherId": "tch_1790757345160_rurh"
+    }
+  ],
+  "studentCredentials": [
+    {
+      "studentId": "89196",
+      "login": "89196",
+      "passwordHash": "$2b$10$gXZegccKaO7XHMFftmf2ruzptR/1NcJMVtPqnWR.MbL61BtH7..5O",
+      "plainTempPasswordShownOnce": "Fh9497",
+      "isPasswordChanged": false,
+      "createdAt": "2026-09-29T04:51:40.618Z",
+      "updatedAt": "2026-09-29T04:51:40.618Z"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att_1790757345204_xeo9",
+      "groupId": "grp_1790757345168_cxr5",
+      "studentId": "std_1790657500618_f7u6",
+      "lessonDate": "2026-09-30",
+      "status": "PRESENT",
+      "notes": "Aktiv qatnashdi",
+      "markedBy": "usr_super_1",
+      "createdAt": "2026-09-30T08:35:45.204Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_1790757345211_2ys8",
+      "studentId": "std_1790657500618_f7u6",
+      "amount": 500000,
+      "paymentDate": "2026-09-30",
+      "forMonth": "2026-09",
+      "paymentType": "CASH",
+      "receiptNumber": "PAY-345211",
+      "notes": "Test tolov",
+      "recordedBy": "Amir Temur",
+      "createdAt": "2026-09-30T08:35:45.211Z"
+    },
+    {
+      "id": "pay_1790757320657_mvmz",
+      "studentId": "std_1790657500618_f7u6",
+      "amount": 500000,
+      "paymentDate": "2026-09-30",
+      "forMonth": "2026-09",
+      "paymentType": "CASH",
+      "receiptNumber": "PAY-320657",
+      "notes": "Test tolov",
+      "recordedBy": "Amir Temur",
+      "createdAt": "2026-09-30T08:35:20.657Z"
+    },
+    {
+      "id": "pay_1790757268860_ot6w",
+      "studentId": "std_1790657500618_f7u6",
+      "amount": 500000,
+      "paymentDate": "2026-09-30",
+      "forMonth": "2026-09",
+      "paymentType": "CASH",
+      "receiptNumber": "PAY-268860",
+      "notes": "Test tolov",
+      "recordedBy": "Amir Temur",
+      "createdAt": "2026-09-30T08:34:28.860Z"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sch_1790757268839_s68g",
+      "groupId": "grp_1790757268839_cn6x",
+      "courseId": "crs_1790757268830_4s93",
+      "teacherId": "tch_1790757268835_r7df",
+      "dayOfWeek": "Dushanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:34:28.839Z"
+    },
+    {
+      "id": "sch_1790757268839_b83g",
+      "groupId": "grp_1790757268839_cn6x",
+      "courseId": "crs_1790757268830_4s93",
+      "teacherId": "tch_1790757268835_r7df",
+      "dayOfWeek": "Chorshanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:34:28.839Z"
+    },
+    {
+      "id": "sch_1790757268839_x96d",
+      "groupId": "grp_1790757268839_cn6x",
+      "courseId": "crs_1790757268830_4s93",
+      "teacherId": "tch_1790757268835_r7df",
+      "dayOfWeek": "Juma",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:34:28.839Z"
+    },
+    {
+      "id": "sch_1790757268845_6j4p",
+      "groupId": "grp_1790757268845_lqeq",
+      "courseId": "crs_1790757268830_4s93",
+      "dayOfWeek": "Seshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:34:28.845Z"
+    },
+    {
+      "id": "sch_1790757268845_lje2",
+      "groupId": "grp_1790757268845_lqeq",
+      "courseId": "crs_1790757268830_4s93",
+      "dayOfWeek": "Payshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:34:28.845Z"
+    },
+    {
+      "id": "sch_1790757268845_y9hm",
+      "groupId": "grp_1790757268845_lqeq",
+      "courseId": "crs_1790757268830_4s93",
+      "dayOfWeek": "Shanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:34:28.845Z"
+    },
+    {
+      "id": "sch_1790757320637_rphv",
+      "groupId": "grp_1790757320637_npdx",
+      "courseId": "crs_1790757320628_o41z",
+      "teacherId": "tch_1790757320632_82y8",
+      "dayOfWeek": "Dushanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:20.637Z"
+    },
+    {
+      "id": "sch_1790757320637_hl1h",
+      "groupId": "grp_1790757320637_npdx",
+      "courseId": "crs_1790757320628_o41z",
+      "teacherId": "tch_1790757320632_82y8",
+      "dayOfWeek": "Chorshanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:20.637Z"
+    },
+    {
+      "id": "sch_1790757320637_257q",
+      "groupId": "grp_1790757320637_npdx",
+      "courseId": "crs_1790757320628_o41z",
+      "teacherId": "tch_1790757320632_82y8",
+      "dayOfWeek": "Juma",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:20.637Z"
+    },
+    {
+      "id": "sch_1790757320641_sgue",
+      "groupId": "grp_1790757320641_mj5c",
+      "courseId": "crs_1790757320628_o41z",
+      "dayOfWeek": "Seshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:20.641Z"
+    },
+    {
+      "id": "sch_1790757320641_7gt2",
+      "groupId": "grp_1790757320641_mj5c",
+      "courseId": "crs_1790757320628_o41z",
+      "dayOfWeek": "Payshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:20.641Z"
+    },
+    {
+      "id": "sch_1790757320641_3srr",
+      "groupId": "grp_1790757320641_mj5c",
+      "courseId": "crs_1790757320628_o41z",
+      "dayOfWeek": "Shanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:20.641Z"
+    },
+    {
+      "id": "sch_1790757345168_cese",
+      "groupId": "grp_1790757345168_cxr5",
+      "courseId": "crs_1790757345153_z5k3",
+      "teacherId": "tch_1790757345160_rurh",
+      "dayOfWeek": "Dushanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:45.168Z"
+    },
+    {
+      "id": "sch_1790757345168_9db9",
+      "groupId": "grp_1790757345168_cxr5",
+      "courseId": "crs_1790757345153_z5k3",
+      "teacherId": "tch_1790757345160_rurh",
+      "dayOfWeek": "Chorshanba",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:45.168Z"
+    },
+    {
+      "id": "sch_1790757345168_hmoh",
+      "groupId": "grp_1790757345168_cxr5",
+      "courseId": "crs_1790757345153_z5k3",
+      "teacherId": "tch_1790757345160_rurh",
+      "dayOfWeek": "Juma",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "room": "101-xona",
+      "createdAt": "2026-09-30T08:35:45.168Z"
+    },
+    {
+      "id": "sch_1790757345175_rhgs",
+      "groupId": "grp_1790757345175_h8hg",
+      "courseId": "crs_1790757345153_z5k3",
+      "dayOfWeek": "Seshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:45.174Z"
+    },
+    {
+      "id": "sch_1790757345175_rwsh",
+      "groupId": "grp_1790757345175_h8hg",
+      "courseId": "crs_1790757345153_z5k3",
+      "dayOfWeek": "Payshanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:45.174Z"
+    },
+    {
+      "id": "sch_1790757345175_ivyi",
+      "groupId": "grp_1790757345175_h8hg",
+      "courseId": "crs_1790757345153_z5k3",
+      "dayOfWeek": "Shanba",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "room": "Asosiy xona",
+      "createdAt": "2026-09-30T08:35:45.174Z"
+    }
+  ],
+  "announcements": [],
+  "leads": [],
+  "auditLogs": [
+    {
+      "id": "audit_1790757345230_u61dc",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘qituvchi o‘chirildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757345160_rurh",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.230Z"
+    },
+    {
+      "id": "audit_1790757345227_9xdgq",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Kurs o‘chirildi",
+      "entity": "Course",
+      "entityId": "crs_1790757345153_z5k3",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.227Z"
+    },
+    {
+      "id": "audit_1790757345223_ncch3",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.223Z"
+    },
+    {
+      "id": "audit_1790757345219_65mpz",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Guruh o‘chirildi",
+      "entity": "Group",
+      "entityId": "grp_1790757345168_cxr5",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.219Z"
+    },
+    {
+      "id": "audit_1790757345211_7eouo",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "To‘lov qabul qilindi",
+      "entity": "Payment",
+      "entityId": "pay_1790757345211_2ys8",
+      "details": {
+        "student": "RT FH",
+        "studentCode": "89196",
+        "amount": 500000,
+        "receiptNumber": "PAY-345211",
+        "forMonth": "2026-09"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.211Z"
+    },
+    {
+      "id": "audit_1790757345205_fqrym",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Davomat belgilandi",
+      "entity": "Attendance",
+      "entityId": "grp_1790757345168_cxr5",
+      "details": {
+        "group": "Test-Group-101",
+        "date": "2026-09-30",
+        "markedCount": 1
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.205Z"
+    },
+    {
+      "id": "audit_1790757345198_9643m",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.198Z"
+    },
+    {
+      "id": "audit_1790757345175_priw6",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757345175_h8hg",
+      "details": {
+        "name": "Test-Group-NoTeacher",
+        "course": "Audit Test Course"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.175Z"
+    },
+    {
+      "id": "audit_1790757345168_8hnbr",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757345168_cxr5",
+      "details": {
+        "name": "Test-Group-101",
+        "course": "Audit Test Course",
+        "teacher": "Test Oqituvchi"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.168Z"
+    },
+    {
+      "id": "audit_1790757345161_0a32c",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘qituvchi qo‘shildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757345160_rurh",
+      "details": {
+        "fullName": "Test Oqituvchi",
+        "specialty": "Matematika"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.161Z"
+    },
+    {
+      "id": "audit_1790757345154_thpjv",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi kurs yaratildi",
+      "entity": "Course",
+      "entityId": "crs_1790757345153_z5k3",
+      "details": {
+        "name": "Audit Test Course",
+        "fee": 500000
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.154Z"
+    },
+    {
+      "id": "audit_1790757345092_ipuqg",
+      "userId": "std_1790657500618_f7u6",
+      "userName": "Ota-ona (RT FH)",
+      "userRole": "PARENT",
+      "action": "Ota-ona kabinetiga kirdi (Login)",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:45.092Z"
+    },
+    {
+      "id": "audit_1790757344982_584xp",
+      "userId": "usr_oper_1",
+      "userName": "Zarnigor Ahmedova",
+      "userRole": "OPERATOR",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_oper_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:44.983Z"
+    },
+    {
+      "id": "audit_1790757344868_ytccy",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:44.868Z"
+    },
+    {
+      "id": "audit_1790757320673_7cr3m",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘qituvchi o‘chirildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757320632_82y8",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.673Z"
+    },
+    {
+      "id": "audit_1790757320669_sdrnj",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Kurs o‘chirildi",
+      "entity": "Course",
+      "entityId": "crs_1790757320628_o41z",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.669Z"
+    },
+    {
+      "id": "audit_1790757320666_s85sv",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.666Z"
+    },
+    {
+      "id": "audit_1790757320661_zcksc",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Guruh o‘chirildi",
+      "entity": "Group",
+      "entityId": "grp_1790757320637_npdx",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.661Z"
+    },
+    {
+      "id": "audit_1790757320657_qmkd9",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "To‘lov qabul qilindi",
+      "entity": "Payment",
+      "entityId": "pay_1790757320657_mvmz",
+      "details": {
+        "student": "RT FH",
+        "studentCode": "89196",
+        "amount": 500000,
+        "receiptNumber": "PAY-320657",
+        "forMonth": "2026-09"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.657Z"
+    },
+    {
+      "id": "audit_1790757320647_kkrkb",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.647Z"
+    },
+    {
+      "id": "audit_1790757320642_4nkhc",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757320641_mj5c",
+      "details": {
+        "name": "Test-Group-NoTeacher",
+        "course": "Audit Test Course"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.642Z"
+    },
+    {
+      "id": "audit_1790757320637_7ii4g",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757320637_npdx",
+      "details": {
+        "name": "Test-Group-101",
+        "course": "Audit Test Course",
+        "teacher": "Test Oqituvchi"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.637Z"
+    },
+    {
+      "id": "audit_1790757320632_oo85h",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘qituvchi qo‘shildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757320632_82y8",
+      "details": {
+        "fullName": "Test Oqituvchi",
+        "specialty": "Matematika"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.632Z"
+    },
+    {
+      "id": "audit_1790757320628_4t3t2",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi kurs yaratildi",
+      "entity": "Course",
+      "entityId": "crs_1790757320628_o41z",
+      "details": {
+        "name": "Audit Test Course",
+        "fee": 500000
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.628Z"
+    },
+    {
+      "id": "audit_1790757320573_mlyfv",
+      "userId": "std_1790657500618_f7u6",
+      "userName": "Ota-ona (RT FH)",
+      "userRole": "PARENT",
+      "action": "Ota-ona kabinetiga kirdi (Login)",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.573Z"
+    },
+    {
+      "id": "audit_1790757320471_oeg7t",
+      "userId": "usr_oper_1",
+      "userName": "Zarnigor Ahmedova",
+      "userRole": "OPERATOR",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_oper_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.471Z"
+    },
+    {
+      "id": "audit_1790757320354_jzxfg",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:35:20.354Z"
+    },
+    {
+      "id": "audit_1790757268902_rced3",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘qituvchi o‘chirildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757268835_r7df",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.902Z"
+    },
+    {
+      "id": "audit_1790757268899_s2f2s",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Kurs o‘chirildi",
+      "entity": "Course",
+      "entityId": "crs_1790757268830_4s93",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.899Z"
+    },
+    {
+      "id": "audit_1790757268895_tpbtj",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.895Z"
+    },
+    {
+      "id": "audit_1790757268864_76q9n",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Guruh o‘chirildi",
+      "entity": "Group",
+      "entityId": "grp_1790757268839_cn6x",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.864Z"
+    },
+    {
+      "id": "audit_1790757268861_qwmty",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "To‘lov qabul qilindi",
+      "entity": "Payment",
+      "entityId": "pay_1790757268860_ot6w",
+      "details": {
+        "student": "RT FH",
+        "studentCode": "89196",
+        "amount": 500000,
+        "receiptNumber": "PAY-268860",
+        "forMonth": "2026-09"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.861Z"
+    },
+    {
+      "id": "audit_1790757268851_ff7yd",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi ma’lumotlari tahrirlandi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "updatedFields": [
+          "courseId",
+          "groupId"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.851Z"
+    },
+    {
+      "id": "audit_1790757268846_gh4jt",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757268845_lqeq",
+      "details": {
+        "name": "Test-Group-NoTeacher",
+        "course": "Audit Test Course"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.846Z"
+    },
+    {
+      "id": "audit_1790757268840_skgo0",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi guruh ochildi",
+      "entity": "Group",
+      "entityId": "grp_1790757268839_cn6x",
+      "details": {
+        "name": "Test-Group-101",
+        "course": "Audit Test Course",
+        "teacher": "Test Oqituvchi"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.840Z"
+    },
+    {
+      "id": "audit_1790757268835_nkfkt",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘qituvchi qo‘shildi",
+      "entity": "Teacher",
+      "entityId": "tch_1790757268835_r7df",
+      "details": {
+        "fullName": "Test Oqituvchi",
+        "specialty": "Matematika"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.835Z"
+    },
+    {
+      "id": "audit_1790757268830_d8a3s",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi kurs yaratildi",
+      "entity": "Course",
+      "entityId": "crs_1790757268830_4s93",
+      "details": {
+        "name": "Audit Test Course",
+        "fee": 500000
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.830Z"
+    },
+    {
+      "id": "audit_1790757268777_jtjbq",
+      "userId": "std_1790657500618_f7u6",
+      "userName": "Ota-ona (RT FH)",
+      "userRole": "PARENT",
+      "action": "Ota-ona kabinetiga kirdi (Login)",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.777Z"
+    },
+    {
+      "id": "audit_1790757268675_a9rbt",
+      "userId": "usr_oper_1",
+      "userName": "Zarnigor Ahmedova",
+      "userRole": "OPERATOR",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_oper_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.675Z"
+    },
+    {
+      "id": "audit_1790757268566_em1j4",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-30T08:34:28.566Z"
+    },
+    {
+      "id": "audit_1790657751931_1ssji",
+      "userId": "usr_oper_1",
+      "userName": "Zarnigor Ahmedova",
+      "userRole": "OPERATOR",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_oper_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:55:51.931Z"
+    },
+    {
+      "id": "audit_1790657523714_rin7p",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘quvchi yaratildi",
+      "entity": "Student",
+      "entityId": "std_1790657523713_48kk",
+      "details": {
+        "studentId": "82018",
+        "fullName": "Bekzod Murodov",
+        "course": "General English B2"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:52:03.714Z"
+    },
+    {
+      "id": "audit_1790657523589_ea3sv",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi kurs yaratildi",
+      "entity": "Course",
+      "entityId": "crs_1790657523589_ynmz",
+      "details": {
+        "name": "General English B2",
+        "fee": 0
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:52:03.589Z"
+    },
+    {
+      "id": "audit_1790657523572_e6eev",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:52:03.572Z"
+    },
+    {
+      "id": "audit_1790657500619_0igub",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘quvchi yaratildi",
+      "entity": "Student",
+      "entityId": "std_1790657500618_f7u6",
+      "details": {
+        "studentId": "89196",
+        "fullName": "RT FH"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:51:40.619Z"
+    },
+    {
+      "id": "audit_1790657349329_29wm7",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:49:09.329Z"
+    },
+    {
+      "id": "audit_1790657238960_58z92",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:47:18.960Z"
+    },
+    {
+      "id": "audit_1790657221627_91fxt",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:47:01.627Z"
+    },
+    {
+      "id": "audit_1790656787025_r8gp9",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "O‘quvchi o‘chirildi (Soft Delete)",
+      "entity": "Student",
+      "entityId": "std_1790656786990_owym",
+      "details": {
+        "studentId": "6216140",
+        "fullName": "Rustam Bekov"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:39:47.025Z"
+    },
+    {
+      "id": "audit_1790656786991_ytf99",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Yangi o‘quvchi yaratildi",
+      "entity": "Student",
+      "entityId": "std_1790656786990_owym",
+      "details": {
+        "studentId": "6216140",
+        "fullName": "Rustam Bekov"
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:39:46.991Z"
+    },
+    {
+      "id": "audit_1790656786871_z58s8",
+      "userId": "usr_super_1",
+      "userName": "Amir Temur",
+      "userRole": "SUPER_ADMIN",
+      "action": "Tizimga kirdi (Login)",
+      "entity": "User",
+      "entityId": "usr_super_1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-09-29T04:39:46.871Z"
+    }
+  ],
+  "telegramConfig": {
+    "botToken": "",
+    "adminChatId": "",
+    "enabled": false,
+    "sendPasswordInTelegram": false
+  },
+  "systemSettings": {
+    "centerName": "EduCenter CRM",
+    "phone": "+998 90 999 00 01",
+    "currency": "UZS",
+    "timeZone": "Asia/Tashkent"
+  }
+}
